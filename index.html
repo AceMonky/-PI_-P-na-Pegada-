@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pé na Pegada</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="icon" href="img/logope.svg">
+    </head>
+
+    <body>
+        <header class="container">
+            <nav class="menu">
+                <ul>
+                    <li class="logo">
+                        <img src="img/logope.svg">
+                    </li>
+                    <li>
+                        <button>
+                            <a href="sobre.html">
+                                Sobre nós
+                            </a>
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="exibirSubMenu()">
+                            <a>
+                                Clique
+                            </a>
+                        </button>
+                    </li>
+                        <ul id="menuclique">
+                            <li class="logo2">
+                                <img src="img/logope.svg">
+                            </li>
+                            <li>
+                                <button class="voltar" onclick="ocultarSubMenu()">
+                                    <a>
+                                        Voltar
+                                    </a>
+                                </button>
+                            </li>
+                            <li>
+                                <button data-slide="1" onclick="showSlides(1); document.getElementById('oquee').scrollIntoView();">
+                                    <a>
+                                        O que é
+                                    </a>
+                                </button>
+                            </li>
+                            <li>
+                                <button data-slide="2" onclick="showSlides(2);  document.getElementById('paraqueserve').scrollIntoView();">
+                                    <a>
+                                        Para que serve
+                                    </a>
+                                </button>
+                            </li>
+                            <li>
+                                <button data-slide="3" onclick="showSlides(3);  document.getElementById('comoreduzir').scrollIntoView();">
+                                    <a>
+                                        Como reduzir
+                                    </a>
+                                </button>
+                            </li>
+                            <li>
+                                <button data-slide="4" onclick="showSlides(4);  document.getElementById('comocalcular').scrollIntoView();">
+                                    <a>
+                                        Como calcular
+                                    </a>
+                                </button>
+                            </li>
+                            <li>
+                                <button data-slide="5" onclick="showSlides(5);  document.getElementById('normaseprotocolos').scrollIntoView();">
+                                    <a>
+                                        Normas
+                                    </a>
+                                </button>
+                            </li>
+                        </ul>
+                    <li>
+                        <button>
+                            <a href="conteudos.html">
+                                Conteúdos
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="slideshow">
+                <div class="mySlides fade" style="display: block;">
+                    <img src="img/fundo.svg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/estrada.svg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/casas.svg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/fabricas.svg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/tratores.svg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/carros.svg" style="width:100%">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="oquee">
+            <div class="conteudoum">
+                <div class="oqediv">
+                    <h3>
+                        O que é pegada de carbono?
+                    </h3>
+                    <p>
+                        A pegada de carbono é uma medida que calcula a emissão de carbono equivalente na atmosfera por uma pessoa, atividade, evento, empresa, organização ou governo. Muitas atividades rotineiras acabam gerando emissões atmosféricas de gases do efeito estufa (GEEs). Imagine que todos na cidade, no estado, no país e no mundo também fazem atividades parecidas. É muita emissão, não é mesmo? As vezes isso resulta em diversos problemas ambientais, como o aumento da temperatura do planeta. 
+                    </p>
+                    <p>
+                        Para que se tenha noção das quantidades, todos esses gases podem ser convertidos em medidas de carbono equivalente, o dióxido de carbono equivalente (CO2eq). Quando mensuramos a quantidade de carbono equivalente emitida na atmosfera temos a pegada de carbono de uma determinada pessoa, empresa ou atividade.
+                    </p>
+                    <h6>
+                        São exemplos de atividades que geram emissões:
+                    </h6>
+                    <ul>
+                        <li>
+                            Queima de combustíveis fósseis;
+                        </li>
+                        <li>
+                            Cultivo de plantações;
+                        </li>
+                        <li>
+                            Desmatamento;
+                        </li>
+                        <li>
+                            Queimadas;
+                        </li>
+                    </ul>
+                </div>
+                <div class="balancadiv">
+                    <img src="img/fundooquebalanca.svg">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="paraqueserve">
+            <div class="conteudodois">
+                <div class="servediv">
+                    <h3>
+                        Para que serve a pegada de carbono?
+                    </h3>
+                    <p>
+                        Através da pegada de carbono podemos analisar  os impactos
+                        que causamos na atmosfera e as mudanças climáticas provocadas
+                        pelo lançamento de gases do efeito estufa a partir de cada produto, processo ou serviço que consumimos. Toda atitude humana traz algum impacto para o planeta, por menor que seja, e o modo de vida contemporâneo emite muito mais gases do que a Terra é capaz de absorver. Dessa maneira, podemos dizer que estamos exigindo muito de sua biocapacidade.
+                    </p>
+                    <p id="pdois">
+                        Se você come um prato de arroz e feijão, saiba que houve  uma pegada de carbono para essa refeição (plantação, cultivo e transporte). Conhecer as nossas emissões de carbono equivalente, direta ou indiretamente, é muito importante para reduzi-las com a finalidade de desacelerar o aquecimento global, melhorar a qualidade de vida do planeta, reduzir a pegada ecológica e evitar a sobrecarga do ecossistema da Terra.
+                    </p>
+                </div>
+                <div class="pediv">
+                <img src="img/fundoservepe.svg">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="comoreduzir">
+            <div class="conteudotres">
+                <div class="reduzirdiv">
+                    <h3>
+                        Como reduzir a pegada de carbono?
+                    </h3>
+                    <p>
+                        Reduzir a pegada de carbono é uma das formas mais eficazes de combater as mudanças climáticas e preservar o planeta para as gerações futuras. Uma das maneiras mais simples e eficazes de reduzir a pegada de carbono é por meio do transporte. Optar por caminhar, pedalar, utilizar o transporte público ou compartilhado em vez de dirigir sozinho reduzirá as emissões de gases de efeito estufa, além de promover um estilo de vida mais saudável. Além disso, adotar um estilo de vida baseado em alimentos de origem local e sustentável também pode ajudar a reduzir a pegada de carbono.
+                    </p>
+                    <p>
+                        Outra maneira eficaz de reduzir a pegada de carbono é através da adoção de práticas de consumo consciente. Isso inclui reduzir o consumo de energia elétrica em casa, investir em fontes de energia renovável, reduzir o consumo de produtos descartáveis e optar por produtos duráveis e reutilizáveis. Pequenas mudanças em nossos hábitos diários podem ter um grande impacto no meio ambiente e ajudar a proteger nosso planeta. 
+                    </p>
+                </div>  
+                <div class="desenhodiv">
+                    <img src="img/fundoreduzirdesenho.svg">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="comocalcular">
+            <div class="conteudoquatro">
+                <div class="calculardiv">
+                    <h3>
+                        Como calcular sua pegada de carbono?
+                    </h3>
+                    <p>
+                        É possível fazer uma estimativa de qual é o tamanho da sua pegada de carbono. O site Carbon Footprint permite calcular a pegada de carbono por meio de algumas informações básicas, o valor é aproximado, mas ajuda a ter uma ideia e repensar suas escolhas cotidianas. A calculadora da pegada de carbono é gratuita.
+                    </p>
+                    <p>
+                        Algumas empresas, como a Eccaplan, oferecem o serviço de cálculo e a neutralização de carbono para indivíduos e empresas. As emissões inevitáveis podem ser compensadas em projetos ambientais certificados. Dessa forma, a mesma quantidade de CO2 emitida é compensada com incentivo e uso de tecnologias limpas.
+                    </p>
+                </div>
+                <div class="calculadoradiv">
+                    <img src="img/fundocalcularcalculadora.svg">
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="normaseprotocolos">
+            <div class="conteudocinco">
+                <div class="divconteudos">
+                    <h3>
+                        Normas e protocolos
+                    </h3>
+                    <dl>
+                        <dt>
+                            GHG Protocol
+                        </dt>
+                        <dd>
+                            O GHG Protocol (Greenhouse Gas Protocol) é uma iniciativa global para estabelecer padrões e orientações para a medição e gestão das emissões de gases de efeito estufa (GEE) pelas empresas. O protocolo foi criado em 1998 por duas organizações sem fins lucrativos, o World Resources Institute (WRI) e o World Business Council for Sustainable Development (WBCSD), com o objetivo de fornecer uma estrutura consistente para a contabilização das emissões de GEE e apoiar a transição para uma economia de baixo carbono.
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            PAS 2050
+                        </dt>
+                        <dd>
+                            A PAS 2050 é uma norma britânica que estabelece um conjunto de requisitos e diretrizes para avaliação de pegada de carbono de produtos e serviços. Foi lançada em 2008 pelo British Standards Institution (BSI) e se tornou uma referência internacional para a medição de emissões de gases de efeito estufa associadas a produtos.
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            ISO 14064
+                        </dt>
+                        <dd>
+                            A ISO 14064 é uma norma internacional que estabelece requisitos para a quantificação, monitoramento e relato de emissões de gases de efeito estufa (GEE). Foi lançada em 2006 pela Organização Internacional para Padronização (ISO) e é uma das principais normas para gerenciamento de emissões de GEE.
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            ISO 14067
+                        </dt>
+                        <dd> 
+                            A ISO 14067 é uma norma internacional publicada pela Organização Internacional de Normalização (ISO) em 2018. Ela estabelece diretrizes para avaliação de pegada de carbono de produtos e serviços, com o objetivo de ajudar as organizações a identificar e gerenciar suas emissões de gases de efeito estufa (GEE) ao longo do ciclo de vida dos produtos.
+                        </dd>
+                    </dl>
+                </div>
+                <div class="selodiv">
+                        <img src="img/fundonormasseloum.svg" id="seloum">
+                        <img src="img/fundonormasselodois.svg" id="selodois">
+                        <img src="img/fundonormasselotres.svg" id="selotres">
+                        <img src="img/fundonormasseloquatro.svg" id="seloquatro">
+                </div>
+            </div>
+        </section>
+    
+        <section>
+            <div>
+                <button onclick="topFunction()" id="botaoseta"></button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="rodape">
+                <ul>
+                    Referências
+                    <li><a href="https://www.ecycle.com.br/pegada-de-carbono/" target="_blank">eCycle</a></li>
+                </ul>
+
+                <ul>
+                    Recursos Visuais
+                    <li class="freepik"><a href="https://br.freepik.com/" target="_blank">Freepik</a></li>
+                </ul>
+            </div>
+            <div class="formulario">
+                <ul>
+                    Contato
+                    <li>
+                        <form action="enviar-contato.php" method="post">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                          
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                          
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" required></textarea>
+                            
+                            <input id="enviar" type="submit" value="Enviar">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+        <script src="js/scriptmenu.js"></script>
+        <script src="js/scriptseta.js"></script>
+    </body>
+</html>
