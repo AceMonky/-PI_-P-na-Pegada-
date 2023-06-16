@@ -27,9 +27,11 @@
     width: 100%;
 }
 
-.menu img{
-    width: 3vw;
-    padding: 3px;
+.logo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
 .menu ul{
@@ -38,7 +40,6 @@
     align-items: center;
     list-style: none;
     margin: 0;
-    padding: 5px;
 }
 
 .menu li{
@@ -46,7 +47,10 @@
     white-space: nowrap;
 }
   
-.menu button{
+.menu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     text-decoration: none;
     background: none;
@@ -56,20 +60,13 @@
     text-transform: uppercase;
     font-weight: bold;
     white-space: nowrap;
+    transition: 0.7s;
+    margin: 0 20px;
 }
 
-.menu a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 18px;
-    transition: 0.7s ease-in;
-}
-  
 .menu a:hover{
     background: rgba(252, 251, 251, 0.5);
-    padding: 10px;
+    padding: 9px;
 }
 
 /* SECTION */
@@ -349,31 +346,23 @@
     font-weight: bold;
 }
 
-@media screen and (max-width: 940px) { 
+@media screen and (max-width: 1000px) { 
 
     .menu ul{
         padding: 0;
-    }
-    
-    .menu a{
-        font-size: 9px;
     }
 
     .logo{
         width: 4vw;
     }
 
-    .menu button{
-        text-shadow: 1px 1px black;
-        padding-bottom: 7px;
-    }
-
     .menu a{
-        padding: 5px;
+        text-shadow: 1px 1px #000000;
+        font-size: 9px;
     }
 
     .menu a:hover{
-        padding: 8px;
+        padding: 3px;
     }
 
     #botaoseta{
@@ -415,28 +404,23 @@
         background-position: center;
         background-image: url(img/imgsobre/menucelular.svg);
     }
-
-    .menu a{
-        font-size: 20px;
-    }
     
     .menu ul{
-        padding: 0 6px;
+        padding: 5px;
         flex-direction: column;
     }
 
-    .menu button{
-        text-shadow: 2px 2px black;
+    .menu a{
+        margin: 5px;
     }
-
+    
     .menu a:hover{
-        padding: 2px;
+        padding: 0;
+        background: none;
     }
 
-    .menu img{
-        width: 7vw;
-        padding: 0;
-        margin-left: 10px;
+    .logo img{
+        width: 5vw;
     }
 
     .blocos{

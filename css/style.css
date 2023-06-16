@@ -32,10 +32,16 @@ body{
 }
 
 .logo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
 }
 
 .logo2 img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
 }
 
@@ -46,7 +52,6 @@ body{
     text-align: center;
     list-style: none;
     margin: 0;
-    padding: 0 5px;
 }
 
 .menu li{
@@ -54,7 +59,7 @@ body{
     white-space: nowrap;
 }
   
-.menu button{
+.menu a{
     color: white;
     text-decoration: none;
     background: none;
@@ -64,20 +69,14 @@ body{
     font-weight: bold;
     white-space: nowrap;
     padding: 0 5px;
-}
-
-.menu a{
-    color: white;
-    text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
-    padding: 12px;
-    transition: 0.7s;
+    transition: all 0.7s ease;
+    margin: 0 10px;
 }
   
 .menu a:hover{
     background: rgba(252, 251, 251, 0.5);
-    padding: 10px;
+    padding: 9px;
 }
 
 /* MENU BOTÃO CLIQUE */
@@ -109,7 +108,7 @@ body{
     white-space: nowrap;
 }
 
-#menuclique button{
+#menuclique a{
     color: white;
     text-decoration: none;
     background: none;
@@ -119,6 +118,13 @@ body{
     font-weight: bold;
     white-space: nowrap;
     padding: 5px;
+    transition: all 0.7s ease;
+    margin: 0 15px;
+}
+
+#menuclique a:hover{
+    background: rgba(252, 251, 251, 0.5);
+    padding: 9px;
 }
 
 /* SLIDESHOW */
@@ -149,12 +155,12 @@ body{
     margin: 0 1%;
 }
   
-  .conteudoum {
+.containerdiv {
     display: flex;
     width: 100%;
-  }
+}
   
-  .oqediv {
+.oqediv {
     background-image: url(img/fundooque.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -164,9 +170,9 @@ body{
     margin-right: 1%;
     margin-bottom: 1%;
     margin-top: 1%;
-  }
+}
 
-  .conteudoum h3 {
+.oqediv h3 {
     font-size: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #FFFFFF;
@@ -174,9 +180,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .conteudoum p {
+.oqediv p {
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 10px;
@@ -187,9 +193,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .conteudoum h6 {
+.oqediv h6 {
     font-size: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 10px;
@@ -198,18 +204,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .conteudoum li {
+.oqediv li {
     font-size: 20px;
     color: #FFFFFF;
     text-shadow: 1px 1px #000000;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 3%;
     margin-right: 3%;
-  }
+}
   
-  .balancadiv {
+.balancadiv {
     background-image: url(img/fundooque.svg);
     background-size: cover;
     background-position: right;
@@ -222,19 +228,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .balancadiv img{
-    width: 100%;
-  }
-
-/* CONTEUDO DOIS */
-
-.conteudodois{
-    display: flex;
-    flex-wrap: wrap;
+.balancadiv img{
     width: 100%;
 }
+
+/* CONTEUDO DOIS */
 
 .servediv{
     background-image: url(img/fundoserve.svg);
@@ -247,16 +247,17 @@ body{
     width: 50%;
     margin-right: 1%;  
     margin-bottom: 1%;
+    padding-bottom: 1%;
 }
 
-.conteudodois h3{
+.servediv h3{
     font-size: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #FFFFFF;
     text-shadow: 2px 2px #000000;
 }
 
-.conteudodois p{
+.servediv p{
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 10px;
@@ -264,10 +265,6 @@ body{
     text-shadow: 1px 1px #000000;
     margin-left: 3%;
     margin-right: 3%;
-}
-
-#pdois{
-    padding-bottom: 2%;
 }
 
 .pediv{
@@ -289,11 +286,6 @@ body{
 
 /* CONTEUDO TRES */
 
-.conteudotres{
-    display: flex;
-    width: 100%;
-}
-
 .reduzirdiv {
     background-image: url(img/fundoreduzir.svg);
     background-repeat: no-repeat;
@@ -308,7 +300,7 @@ body{
     margin-bottom: 1%;
 }
 
-.conteudotres h3{
+.reduzirdiv h3{
     font-size: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #FFFFFF;
@@ -316,7 +308,7 @@ body{
     padding: 5px 10px;
 }
 
-.conteudotres p{
+.reduzirdiv p{
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 10px;
@@ -346,11 +338,6 @@ body{
 
 /* CONTEUDO QUATRO */
 
-.conteudoquatro{
-    display: flex;
-    width: 100%;
-}
-
 .calculardiv{
     background-image: url(img/fundocalcular.svg);
     background-repeat: no-repeat;
@@ -365,7 +352,7 @@ body{
     margin-bottom: 1%;
 }
 
-.conteudoquatro h3{
+.calculardiv h3{
     font-size: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
@@ -374,7 +361,7 @@ body{
     padding: 3%;
 }
 
-.conteudoquatro p{
+.calculardiv p{
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 10px;
@@ -405,11 +392,6 @@ body{
 
 /* CONTEUDO CINCO */
 
-.conteudocinco{
-    display: flex;
-    width: 100%;
-}
-
 .divconteudos{
     background-image: url(img/fundonormas.svg);
     background-repeat: no-repeat;
@@ -426,14 +408,14 @@ body{
 }
 
 
-.conteudocinco h3{
+.divconteudos h3{
     font-size: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #FFFFFF;
     text-shadow: 2px 2px #000000;
 }
 
-.conteudocinco dl{
+.divconteudos dl{
     font-size: 20px;
     color: #FFFFFF;
     text-shadow: 1px 1px #000000;
@@ -441,7 +423,7 @@ body{
     margin: 10px;
 }
 
-.conteudocinco dt{
+.divconteudos dt{
     font-weight: bold;
 }
 
@@ -575,14 +557,10 @@ body{
 }
 
 
-@media screen and (max-width: 940px) { 
+@media screen and (max-width: 1000px) { 
 
     .menu ul{
         padding: 0;
-    }
-    
-    .menu a{
-        font-size: 9px;
     }
 
     .logo{
@@ -593,25 +571,27 @@ body{
         width: 4vw;
     }
 
-    .menu button{
-        text-shadow: 1px 1px black;
-        padding-bottom: 7px;
-    }
-
-    #menuclique button{
-        text-shadow: 1px 1px black;
-        padding-bottom: 7px;
-    }
-
     .menu a{
-        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 1px 1px black;
+        font-size: 9px;
     }
 
     .menu a:hover{
-        padding: 8px;
+        padding: 3px;
     }
 
-    .conteudoum{
+    #menuclique a{
+        text-shadow: 1px 1px black;
+    }
+
+    #menuclique a:hover{
+        padding: 3px;
+    }
+
+    .containerdiv{
         display: flex;
         flex-direction: column;
     }
@@ -625,11 +605,6 @@ body{
         width: 100%;
     }
 
-    .conteudodois{
-        display: flex;
-        flex-direction: column;
-    }
-
     .servediv{
         width: 100%;
         flex-direction: column;
@@ -637,11 +612,6 @@ body{
 
     .pediv{
         width: 100%;
-    }
-
-    .conteudotres{
-        display: flex;
-        flex-direction: column;
     }
 
     .reduzirdiv{
@@ -653,11 +623,6 @@ body{
         width: 100%;
     }
 
-    .conteudoquatro{
-        display: flex;
-        flex-direction: column;
-    }
-
     .calculardiv{
         width: 100%;
         flex-direction: column;
@@ -665,11 +630,6 @@ body{
 
     .calculadoradiv{
         width: 100%;
-    }
-
-    .conteudocinco{
-        display: flex;
-        flex-direction: column;
     }
 
     .divconteudos{
@@ -701,29 +661,23 @@ body{
         background-position: center;
         background-image: url(img/menucelular.svg);
         position: relative;
-        height: 150px;
+        height: 200px;
         background-size: cover;
-    }
-
-    .menu a{
-        font-size: 20px;
     }
     
     .menu ul{
-        padding: 0 1px;
+        padding: 10px;
         flex-direction: column;
     }
 
     .menu li{
-        margin: 3%;
+        margin: 5px;
     }
 
-    .menu button{
-        text-shadow: 2px 2px black;
-    }
-
-    .menu a:hover{
-        padding: 2px;
+    .menu a{
+        text-shadow: 1px 1px black;
+        font-size: 14px;
+        margin: 5px;
     }
 
     #menuclique {
@@ -748,8 +702,12 @@ body{
         font-size: 12px;
     }
 
+    #menuclique a:hover{
+        padding: 2px;
+    }
+
     #menuclique li{
-        margin: -1%;
+        margin: 1px;
     }
 
     .logo img{
@@ -771,5 +729,3 @@ body{
     }
 
 }
-   
-

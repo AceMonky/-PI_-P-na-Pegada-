@@ -31,6 +31,9 @@ body{
 }
 
 .logo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
 }
 
@@ -40,7 +43,6 @@ body{
     align-items: center;
     list-style: none;
     margin: 0;
-    padding: 5px;
 }
 
 .menu li{
@@ -48,7 +50,10 @@ body{
     white-space: nowrap;
 }
   
-.menu button{
+.menu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     text-decoration: none;
     background: none;
@@ -58,20 +63,13 @@ body{
     text-transform: uppercase;
     font-weight: bold;
     white-space: nowrap;
-}
-
-.menu a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 18px;
-    transition: 0.7s ease-in;
+    transition: all 0.7s ease;
+    margin: 0 20px;
 }
   
 .menu a:hover{
     background: rgba(252, 251, 251, 0.5);
-    padding: 10px;
+    padding: 9px;
 }
 
 /* ARTICLE */
@@ -429,31 +427,26 @@ body{
     font-weight: bold;
 }
 
-@media screen and (max-width: 940px) { 
+@media screen and (max-width: 1000px) { 
 
     .menu ul{
         padding: 0;
-    }
-    
-    .menu a{
-        font-size: 9px;
     }
 
     .logo{
         width: 4vw;
     }
 
-    .menu button{
-        text-shadow: 1px 1px black;
-        padding-bottom: 7px;
-    }
-
     .menu a{
-        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 1px 1px black;
+        font-size: 9px;
     }
 
     .menu a:hover{
-        padding: 8px;
+        padding: 3px;
     }
 
     #botaoseta{
@@ -546,27 +539,23 @@ body{
         background-position: center;
         background-image: url(img/imgconteudos/menucelular.svg);
     }
-
-    .menu a{
-        font-size: 20px;
-    }
     
     .menu ul{
-        padding: 0 6px;
+        padding: 5px;
         flex-direction: column;
     }
 
-    .menu button{
-        text-shadow: 2px 2px black;
+    .menu a{
+        margin: 5px;
     }
 
     .menu a:hover{
-        padding: 2px;
+        padding: 0;
+        background: none;
     }
 
-    .menu img{
-        width: 7vw;
-        margin-right: 10px;
+    .logo img{
+        width: 5vw;
     }
 
     .videoumdiv{
